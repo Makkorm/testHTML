@@ -1,0 +1,660 @@
+@white-color : #fff;
+@black-color : #000;
+@orange-color: #f36f22;
+@buttonGradient : linear-gradient(to bottom , #ffb22c, #f37021);
+@buttonShadow : inset 0 1px #ffc334;
+@buttonHover : linear-gradient(to top , #ffb22c, #f37021);
+@topLineBg : #2c1507;
+@callBackBg : #6c594e;
+@callBackBorder: #e2ca93;
+@inputBg : #f5f2ea;
+@input-color : #505050;
+@adventagsBg : rgba(230,228,226,.8);
+@catalogBorder :4px solid  #ede5d2;
+@catalogBorderHover :4px solid  @orange-color;
+@catalogItemBorder : 1px solid #c9c3b5;
+@designerBorderHover : 2px solid #dfd7c4;
+@certBg : #ede5d2;
+@blackBgOpas : rgba(0,0,0,.6);
+
+body{
+  font-family: "PT-sans";
+  font-weight: normal;
+  color: @black-color;
+
+  position : relative;
+}
+h1{
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 110px;
+}
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+h3{
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+h4{
+  font-size:25px;
+  font-weight:bold;
+}
+a:focus, a:hover{text-decoration:none;}
+.show{
+  display : block;
+}
+.button{
+  margin : 20px auto 0;
+  padding: 8px;
+  background : @buttonGradient;
+  box-shadow : @buttonShadow;
+  width : 70%;
+  font-size : 18px;
+  font-weight : bold;
+  text-align : center;
+  color : @white-color;
+  cursor : pointer;
+  &:hover{
+    background : @buttonHover;
+  }
+}
+
+.top-line{
+  background: @topLineBg;
+  min-height: 53px;
+  line-height: 53px;
+  ul{
+    margin: 0;
+    padding: 0;
+    li{
+      float: left;
+      font-size: 18px;
+      margin-right: 5%;
+      &:hover a{
+        color: @orange-color;
+      }
+      &:active a{
+        color: @orange-color;
+      }
+      a{
+        text-decoration: underline;
+        color: @white-color;
+     }
+    }
+  }
+  .callBack{
+    margin-left: 30px;
+    background: @callBackBg;
+    cursor: pointer;
+    &:hover p{
+      color: @callBackBorder;
+    }
+    p{
+      color: @white-color;
+      text-align: center;
+    }
+  }
+}
+section{
+  padding: 50px 0 60px;
+}
+header{
+  position: relative;
+  min-height: 621px;
+  ul.slider li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .phone{
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 30px;
+    float: left;
+  }
+  .days{
+    margin-top: 35px;
+    float: left;
+    margin-left: 15px;
+    p{
+      margin: 0;
+      font-size: 14px;
+    }
+  }
+  .controls{
+    margin-top: 15px;
+    .control{
+      height: 19px;
+      width: 19px;
+      float: left;
+      margin-right: 8px;
+      cursor : pointer;
+      background: url(../images/slider_button.png) center no-repeat;
+      &.active{
+        background: url(../images/slider_button_hover.png) center no-repeat;
+      }
+      &:hover{
+        background: url(../images/slider_button_hover.png) center no-repeat;
+      }
+    }
+  }
+  .form{
+    float: right;
+    text-align: center;
+    margin-top: 50px;
+    background: @white-color;
+    width : 90%;
+    .border-top{
+      height: 11px;
+      background: url(../images/border_top.jpg);
+      margin-bottom: 25px;
+    }
+    form{
+      margin-top: 20px;
+      padding: 0 35px 35px;
+      input{
+        width: 100%;
+        display: block;
+        margin: 15px 0;
+        padding: 8px 15px;
+        border: 1px solid @callBackBorder;
+        background: @inputBg;
+        color: @input-color;
+        &.button{
+          background: @buttonGradient;
+          box-shadow: @buttonShadow;
+          text-transform: uppercase;
+          font-weight: bold;
+          color: @black-color;
+          &:hover{
+            background : @buttonHover;
+          }
+        }
+      }
+      p{
+        color:#242424;
+      }
+    }
+  }
+  .advantages{
+    padding: 30px 0;
+    margin-top:20px;
+    background: @adventagsBg;
+    position: relative;
+    .advantages_box{
+      float: left;
+      width:20%;
+      margin: 0 auto;
+      text-align:center;
+      p{
+        margin-top: 20px;
+      }
+    }
+  }
+}/* end header */
+
+/* sections */
+.sections{
+  .kitchen{
+    border-bottom: 1px solid #d5d0cd;
+    .kitchen_box{
+      margin-top: 10px;
+      padding: 20px 20px 50px 135px;
+      background: url(../images/feature_1.png)left top no-repeat;
+      &.second{
+        background: url(../images/feature_2.png)left top no-repeat;
+      }
+      &.third{
+      background: url(../images/feature_3.png)left top no-repeat;
+      }
+      &.fourth{
+        background: url(../images/feature_4.png)left top no-repeat;
+      }
+      h4{
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .catalog{
+    .kitchen_catalog{
+      ul{
+        margin-bottom: 20px;
+        li{
+          float: left;
+          padding: 5px;
+          margin-right: 10px;
+          border-bottom: @catalogBorder;
+          &:hover{
+            border-bottom: @catalogBorderHover;
+          }
+          &.active{
+            border-bottom: @catalogBorderHover;
+          }
+          a{
+            color: @black-color;
+          }
+        }
+      }
+    }
+  }
+  .catalog_item{
+    padding:10px;
+    border: @catalogItemBorder;
+    margin-bottom: 25px;
+    img{
+      width: 100%;
+    }
+    .item_description{
+      margin-top: 15px;
+      .left{
+        float: left;
+        width: 50%;
+        font-weight: bold;
+      }
+      .right{
+        width : 50%;
+        float: left;
+      }
+    }
+    .button{
+      p{
+        font-weight : normal;
+      }
+    }
+  }
+  .cat_item_button{
+    display: none;
+    .cat_button {
+      width: 33px;
+      height: 57px;
+      cursor: pointer;
+      &.previous {
+        float: left;
+        margin-left : 30%;
+        background: url(../images/buttons_previous_cat.png) center no-repeat;
+        &.last_left{
+          background : url(../images/buttons_previous_cert_hover.png) center no-repeat;
+        }
+      }
+      &.next {
+        float: right;
+        margin-right : 30%;
+        background: url(../images/button_next_cat.png) center no-repeat;
+        &.last_right{
+          background : url(../images/button_next_cert_hover.png) center no-repeat;
+        }
+      }
+    }
+  }
+}
+.bunner{
+  padding : 0;
+  h2{
+    color : @white-color;
+    font-size : 28px;
+    margin : 0;
+    text-transform : none;
+  }
+  h3{
+    color : @white-color;
+    font-weight: normal;
+    font-size : 22px;
+    margin : 8px 0;
+    text-transform : none;
+  }
+  &.cons{
+    background : url(../images/cons_bg.jpg);
+    .bunner_box{
+      background : url(../images/right_cons_bg.png) center right no-repeat;
+      padding: 50px 0;
+    }
+    .button{
+      width : 30%;
+      float : left;
+      margin-top : 25px;
+      color : @black-color;
+      padding : 10px 0;
+      font-size : 20px;
+      &:hover{
+        background : @buttonHover;
+      }
+    }
+  }
+  &.step{
+    background : #ffb22c;
+    padding : 50px 0 30px;
+    text-align : center;
+
+    h2{
+      font-weight : normal;
+      &.bold {
+        font-weight : bold;
+        margin : 10px 0 25px 0;
+      }
+    }
+    .step_item{
+      float : left;
+      width : 20%;
+      text-align : center;
+    }
+    img{
+      width : 90%;
+      margin : 0 auto;
+    }
+    p{
+      width : 90%;
+      color : @white-color;
+      margin : 15px auto 0;
+
+    }
+  }
+  &.ourWork{
+    padding : 50px 0;
+    background : url(../images/our_work_bg.jpg) center no-repeat;
+    min-height : 467px;
+    text-align : center;
+    h2{
+      color : @black-color;
+      text-align : center;
+      margin-bottom : 70px;
+    }
+    p{
+      margin-top : 20px;
+      &.time{
+        color : @orange-color;
+        font-weight : bold;
+      }
+    }
+    .ourWork_item{
+      text-align : center;
+    }
+    .button{
+      color : @black-color;
+      width : 30%;
+      margin-top : 70px;
+      p{
+        margin : 0;
+        line-height : 26px;
+      }
+    }
+  }
+}
+.materials{
+  .material_item{
+    width : 30%;
+    float : left;
+    text-align : center;
+    margin : 20px 3% 0 0;
+    p{
+      font-weight : bold;
+    }
+    img{
+      width : 100%;
+      margin-top : 15px;
+    }
+  }
+}
+.designers{
+  .corus_button{
+    width : 33px;
+    height : 57px;
+    cursor : pointer;
+    margin-top : 50px;
+    display : none;
+    &.previous{
+      float : left;
+      background : url(../images/buttons_previous.png) center no-repeat;
+      &:hover{
+        background : url(../images/buttons_previous_hover.png) center no-repeat;
+      }
+    }
+    &.next{
+      float : right;
+      background : url(../images/button_next.png) center no-repeat;
+      &:hover{
+        background : url(../images/button_next_hover.png) center no-repeat;
+      }
+    }
+  }
+  .designer_box{
+    position : relative;
+    .des_item{
+      width : 20%;
+      float : left;
+      cursor : pointer;
+      &:hover img{
+        border : @designerBorderHover;
+      }
+      img{
+        border: 2px solid transparent;
+        border-radius : 50%;
+        display : block;
+        margin : 0 auto;
+      }
+      p.name{
+        margin-top : 15px;
+        font-weight : bold;
+        text-decoration : underline;
+        text-align : center;
+      }
+    }
+  }
+  .button{
+    width : 30%;
+    margin-top : 50px;
+    color : @black-color;
+    padding : 8px;
+    &:hover{
+      background : @buttonHover;
+    }
+  }
+}
+.company_description{
+  .comp_des_item{
+    margin-top : 50px;
+    text-align : center;
+    p{
+      margin : 15px 0;
+    }
+  }
+}
+.certificates{
+  background : @certBg;
+  .certificates_box{
+    height : 333px;
+    width : 100%;
+    .corus_button{
+      width : 33px;
+      height : 57px;
+      cursor : pointer;
+      margin-top : 150px;
+      display : none;
+      &.previous{
+        float : left;
+        background : url(../images/buttons_previous.png) center no-repeat;
+        &:hover{
+          background : url(../images/buttons_previous_hover.png) center no-repeat;
+        }
+      }
+      &.next{
+        float : right;
+        background : url(../images/button_next.png) center no-repeat;
+        &:hover{
+          background : url(../images/button_next_hover.png) center no-repeat;
+        }
+      }
+    }
+    .cert_wrapper{
+      position : relative;
+      .cert_item{
+        width : 20%;
+        height : 333px;
+        border : 5px solid #dfd7c4;
+        background : @white-color;
+        float : left;
+        margin-right : 5%;
+        margin-bottom : 20px;
+        &:last-child{
+          margin-right : 0;
+        }
+      }
+    }
+  }
+}
+.reviews{
+  .reviews_box{
+    padding : 20px 0;
+  }
+  .ava_box{
+    margin-bottom : 50px;
+    text-align : center;
+    p{
+      margin-top : 8px;
+      &.name{
+        font-weight : bold;
+      }
+    }
+    .social_icon{
+      margin-top: 10px;
+      cursor : pointer;
+    }
+  }
+  .mesage{
+    padding : 15px;
+    margin-bottom : 20px;
+    border : 1px solid #c9c3b5;
+  }
+}
+.questions{
+  text-align : center;
+  background : #ffb22c;
+  h2{
+    color : @white-color;
+    font-weight : normal;
+  }
+  .button{
+    width : 30%;
+    color : @black-color;
+    line-height : 28px;
+  }
+}
+
+.callBack_form{
+  position : fixed;
+  top : 0;
+  left : 0;
+  right : 0;
+  bottom : 0;
+  background : @blackBgOpas;
+  display : none;
+  .form{
+    width : 320px;
+    background : @white-color;
+    margin : 10%  auto;
+    position : relative;
+    text-align : center;
+    .border-top{
+      height : 11px;
+      background : url(../images/border_top.jpg);
+      margin-bottom : 25px;
+    }
+    .close_form{
+      width : 24px;
+      height : 34px;
+      background : url(../images/close.png) no-repeat;
+      cursor:pointer;
+
+      position : absolute;
+      top : -30px;
+      right : 0;
+    }
+    p{
+      color : #242424;
+      margin : 15px auto 0;
+      max-width : 90%;
+    }
+    form {
+      margin-top: 20px;
+      padding: 0 35px 35px;
+      input {
+        width: 100%;
+        display: block;
+        margin: 15px 0;
+        padding: 8px 15px;
+        border: 1px solid @callBackBorder;
+        background: @inputBg;
+        color: @input-color;
+        &.button {
+          margin-top : 20px;
+          background: @buttonGradient;
+          box-shadow: @buttonShadow;
+          text-transform: uppercase;
+          font-weight: bold;
+          color: @black-color;
+          &:hover {
+            background: @buttonHover;
+          }
+        }
+      }
+    }
+  }
+}
+.des_description{
+  position : fixed;
+  top : 0;
+  left : 0;
+  bottom : 0;
+  right : 0;
+  background : @blackBgOpas;
+  display : none;
+  &.active{
+    display : block;
+  }
+  .form{
+    width : 50%;
+    padding : 0 0 20px 0;
+    background : @white-color;
+    position : fixed;
+    top : 50px;
+    left : 25%;
+    right : 25%;
+    &.active{
+      display : block;
+    }
+    .border-top{
+      height: 11px;
+      background: url(../images/border_top.jpg);
+      margin-bottom: 25px;
+    }
+    .des_item{
+      text-align : center;
+      p{
+        margin : 15px 0;
+        color : @orange-color;
+        font-size : 18px;
+      }
+    }
+    p{
+      margin : 10px 0;
+      padding : 0 25px;
+    }
+    .close_form{
+      width : 24px;
+      height : 34px;
+      background : url(../images/close.png) no-repeat;
+      cursor:pointer;
+
+      position : absolute;
+      top : -30px;
+      right : 0;
+    }
+  }
+}
+
